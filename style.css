@@ -1,0 +1,36 @@
+.createGrid {
+    margin: 0.5rem;
+}
+
+.drawGrid {
+    margin: 0 1rem;
+}
+
+.container {
+    border: 2px solid grey;
+    height: 95vh;
+    width: 98vw;
+}
+
+.rainbow {
+    background-image: linear-gradient(to bottom right, red, orange, yellow, green, lightblue, blue)
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+    border-color: rgb(245, 231, 206);
+}
+
+.red {
+    background-color: red;
+    border-color: red;
+}
+
+.blue {
+    background-color: rgb(23, 85, 255);
+    border-color: rgb(23, 85, 255);
+}
