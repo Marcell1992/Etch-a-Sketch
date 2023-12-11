@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-SketchY</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/roboPaint.png">
 </head>
-<body draggable="false">
-    <div class="createGrid">
-        <label for="gridSize"><b>Grid size</b></label>
-        <input id="gridSize" step="1" min="16" max="100" type="number" value="16"></input>
-        <label><sup>2</sup></label>
-        <button class="drawGrid">Create Grid</button>
-        <button class="rainbow">Rainbow colors!</button>
-        <button class="black">&nbsp;</button>
-        <button class="white">&nbsp;</button>
-        <button class="red">&nbsp;</button>
-        <button class="blue">&nbsp;</button>
+<body>
+    <div class="gridSettings">
+        <div class="gridCreation">
+            <label for="gridSize"><b>Grid size</b></label>
+            <input id="gridSize" step="1" min="16" max="100" type="number" value="16"></input>
+            <label for="gridSize"><sup>2</sup></label>
+            <button class="drawGrid">Create Grid</button>
+        </div>
+        <div class="colors">
+            <button class="rainbow">Rainbow colors!</button>
+            <button class="black">&nbsp;</button>
+            <button class="white">&nbsp;</button>
+            <button class="red">&nbsp;</button>
+            <button class="blue">&nbsp;</button>
+        </div>
+        <button title="Darken" class="negGradient">&nbsp;</button>
+        <button title="Lighten" class="posGradient">&nbsp;</button>
+        <button class="eraser">Eraser</button>
     </div>
     <div class="container"></div>
+    <p>Copyright <sup>&#169;</sup> This webpage was designed by <a style="color:white;" href="https://github.com/Marcell1992">Marcell</a></p>
+    <p>In Conjunction with <a style="color:white;" href="https://www.theodinproject.com/dashboard">The Odin Project</a> </p>
 </body>
 <script src="script.js"></script>
 </html>

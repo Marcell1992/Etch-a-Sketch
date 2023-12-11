@@ -1,19 +1,48 @@
-.createGrid {
-    margin: 0.5rem;
+:root{
+    user-select: none;
+    background-color: burlywood;
+}
+
+@media (min-width: 1200px){
+    :root {
+        background-image: url(./images/background1.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.gridSettings {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    justify-content: space-between;
+}
+
+.gridCreation {
+    display: flex;
 }
 
 .drawGrid {
     margin: 0 1rem;
 }
 
+.colors {
+    display: flexbox;
+    margin: auto;
+}
+
 .container {
-    border: 2px solid grey;
-    height: 95vh;
-    width: 98vw;
+    border: 5px solid rgb(211, 105, 63);
+    height: 1000px;
+    width: 1000px;
+    background-color: white;
+    margin: auto;
 }
 
 .rainbow {
-    background-image: linear-gradient(to bottom right, red, orange, yellow, green, lightblue, blue)
+    background-image: linear-gradient(to bottom right, red, orange, yellow, green, lightblue, blue);
+    font-weight: 850;
 }
 
 .black {
@@ -33,4 +62,30 @@
 .blue {
     background-color: rgb(23, 85, 255);
     border-color: rgb(23, 85, 255);
+}
+
+.negGradient {
+    width: 50px;
+    background-image: linear-gradient(to bottom right, white 30%, black 70%);
+}
+
+.posGradient {
+    width: 50px;
+    background-image: linear-gradient(to bottom right, black 30%, white 70%);
+}
+
+.neutGradient {
+    width: 50px;
+    background-color: darkgray;
+    border-color: darkgray;
+}
+
+p {
+    margin: 0 auto;
+    padding: 5px;
+    background-color: saddlebrown;
+    text-align: center;
+    font-weight: 800;
+    color: antiquewhite;
+    width: 1000px;  
 }
